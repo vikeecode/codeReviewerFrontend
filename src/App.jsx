@@ -3,7 +3,6 @@ import "prismjs/themes/prism-tomorrow.css"
 import prism from 'prismjs'
 import Editior from 'react-simple-code-editor'
 import Markdown from "react-markdown"
-import rehypehighlight from 'rehype-highlight'
 import "highlight.js/styles/github-dark.css"
 import axios from 'axios'
 import './App.css'
@@ -17,7 +16,7 @@ function App() {
     prism.highlightAll()
   }, [])
   async function reviewCode(){
-    const response = await axios.post('http://localhost:3000/ai/get-review', {
+    const response = await axios.post('https://gyanicodereviewer.onrender.com/ai/get-review', {
 
       code: code
     })
