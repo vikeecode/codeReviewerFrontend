@@ -1,5 +1,4 @@
 import axios from 'axios'
-import "highlight.js/styles/github-dark.css"
 import prism from 'prismjs'
 import "prismjs/themes/prism-tomorrow.css"
 import { useEffect, useState } from 'react'
