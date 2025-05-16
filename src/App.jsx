@@ -4,6 +4,7 @@ import "prismjs/themes/prism-tomorrow.css"
 import { useEffect, useState } from 'react'
 import Markdown from "react-markdown"
 import Editior from 'react-simple-code-editor'
+import rehypehighlight from 'rehype-highlight'
 import './App.css'
 
 function App() {
